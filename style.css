@@ -75,63 +75,10 @@ li a:hover {
   font-weight: bold;
 }
 
+.home{
+  margin-top:175px;
+}
 
-/* Slideshow */
-* {
-  box-sizing: border-box;
-}
-/* Position the slideshow (needed to position the left and right arrows) */
-.slideshow {
-  margin-top: 100px;
-  position: relative;
-  color: white;
-}
-/* Hide the images by default */
-.slides img{
-  object-fit: cover;
-  width: 100%;
-  height: 700px;
-}
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 50px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-.caption-slideshow {
-  font-size: 20px;
-  font-style: italic;
-  text-align: center;
-  background-color: #222;
-  padding: 10px 16px;
-  color: white;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 /* About */
 .about{
   margin: 100px;
@@ -157,6 +104,7 @@ li a:hover {
 .counsel{
   padding: 50px;
   background: url("images/counselBG3.jpg");
+  background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
   height: 500px;
@@ -209,13 +157,10 @@ li a:hover {
 }
 
 
-
-
-
 /* Product Page */
 .product{
   margin: 100px;
-  margin-top: 200px;
+  margin-top: 150px;
 }
 .small-container{
     max-width: 1080px;
@@ -226,7 +171,7 @@ li a:hover {
 .row{
   color: #394735ff;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   justify-content: space-around;
 }
@@ -234,6 +179,7 @@ li a:hover {
   background-color: white;
   flex-basis: 30%;
   min-width: 200px;
+  height: 600px;
   margin: 30px 0;
   text-align: center;
   padding: 30px 10px;
@@ -338,6 +284,36 @@ hr{
   border:none;
 }
 
+.skintype-description{
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content: space-around;
+  align-items:flex-start;
+}
+
+.descrip-tips{
+  display:flex;
+  flex-flow:column nowrap;
+  justify-content: space-start;
+  align-items:flex-start;
+  margin-left:5%;
+}
+
+.skinDescription{
+  font-size:16px;
+  margin:0px;
+}
+
+.tipsList{
+  list-style: circle;
+}
+.typeTips{
+  float:left;
+  margin:2px;
+  list-style: circle;
+}
+
+
 /* Skin Concerns Page */
 
 .concerns{
@@ -410,7 +386,7 @@ section{
 }
 .qNa{
   margin: 100px;
-  margin-top: 200px;
+  margin-top:200px;
 }
 .faq{
   max-width: 700px;
@@ -433,7 +409,7 @@ section{
   line-height: 1.6;
   font-size: 1.4rem;
 }
-
+/*Contact us form */
 .container{
 	position: relative;
 	width: 100%;
@@ -457,7 +433,7 @@ section{
 	z-index: -1;
 }
 .contact-box{
-	max-width: 850px;
+	max-width: 80%;
 	grid-template-columns: repeat(2, 1fr);
   display: flex;
 	justify-content: center;
@@ -476,20 +452,20 @@ section{
 	margin-bottom: 10px;
 }
 
-.right h2:after{
-	content: '';
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  height: 4px;
-  width: 50px;
-  border-radius: 2px;
-  background-color: #92AD40;
-}
-
 .field{
 	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.fieldMessage{
+  height: 100px;
+  width: 100%;
 	border: 2px solid rgba(0, 0, 0, 0);
 	outline: none;
 	background-color: rgba(230, 230, 230, 0.6);
@@ -570,5 +546,3 @@ footer{
   color: white;
   text-align: center;
 }
-
-

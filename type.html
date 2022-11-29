@@ -23,8 +23,6 @@
     </ul>
   </div>
 
-  <div class="post">
-  </div>
   <div class="skinTypes">
     <div>
       <p class="skinIntro"> Skin care is not one-size-fits-all, and it shouldn’t be. Everyone’s skin is different, and
@@ -85,65 +83,255 @@
     <div id="types">
       <h1>4 Common Skin Types</h1>
       <div class="indType">
-        <div class="1">
-          <h2>Normal Skin</h2>
-          <img src="images/NormalSkin.jpeg" alt="normal skin">
-
-        </div>
-        <div class="2">
-          <h2>Oily Skin</h2>
-          <img src="images/oilyskin.jpeg" alt="oily skin">
-        </div>
-        <div class="3">
-          <h2>Dry Skin</h2>
-          <img src="images/dryskin.jpeg" alt="dry skin">
-
-        </div>
-        <div class="4">
-          <h2>Combination Skin</h2>
-          <img src="images/combinationskin.jpeg" alt="combination skin">
-        </div>
-
-
-
-
-
-
-
-
-        <footer>
-          <div>
-            <h4>This site belongs to Aitirja, Kathy, Kerina, Riddhi, Rasheedah, and Riza</h4>
-            <p>© 8002 Group Project 2022 </p>
+        <h2>Normal Skin</h2>
+        <div class="skintype-description">
+          <img src="images/NormalSkin.jpeg" alt="normal skin" width="300" height="300">
+          <div class="descrip-tips">
+            <h3>Description</h3>
+            <p class="skinDescription">Normal skin is balanced—feeling neither too dry nor too oily. It is not prone to
+              breakouts, flakiness, or
+              feeling greasy or tight. However, despite having no
+              specific issues or concerns, it still requires proper skincare to look and feel its best. The ideal normal
+              skin routine helps maintain your skin’s hydration by locking in moisture and supporting your skin’s
+              protective barrier.</p>
+            <h3>Tips for Normal Skin</h3>
+            <ul class="tipsList">
+              <li class="typeTips">Cleanse twice a day with a gentle, nonfoaming cleanser</li>
+              <li class="typeTips">Moisturize with a light, hydrating moisturizer</li>
+              <li class="typeTips">Protect your skin from sun damage with an SPF of 30 or more</li>
+            </ul>
           </div>
-        </footer>
+        </div>
 
-        <!--         <script src="script.js"></script> -->
-        <script>
-          document.getElementById("form1").onsubmit = function () {
-            one = parseInt(document.querySelector('input[name = "one"]:checked').value);
-            two = parseInt(document.querySelector('input[name = "two"]:checked').value);
-            three = parseInt(document.querySelector('input[name = "three"]:checked').value);
-            four = parseInt(document.querySelector('input[name = "four"]:checked').value);
-            result = one + two + three + four;
+        <div class="skintype-product">
+          <h3>Product Recommendation</h3>
+          <div class="row">
+            <div class="col-3">
+              <a href="https://sokoglam.com/collections/normal/products/b-o-m-voyage-cleansing-balm">
+                <img src="images/normal.webp"></a>
+              <h3 id="link1">Cleansing Balm</h3>
+              <h4>$20.00</h4>
+              <p> This unique cleanser is formulated with luxurious ingredients like jojoba seed oil, pear fruit
+                extract and evening primrose oil.</p>
+            </div>
+            <div class="col-3">
+              <a href="https://sokoglam.com/collections/normal/products/manyo-factory-pure-cleansing-oil">
+                <img src="images/normall.webp"> </a>
+              <h3>Pure Cleansing Oil</h3>
+              <h4>$29.00</h4>
+              <p> This cleansing oil is gentle yet powerful and actively fights blackheads and whiteheads without
+                clogging pores.</p>
+            </div>
+            <div class="col-3">
+              <a
+                href="https://sokoglam.com/collections/skincare/products/neogen-dermalogy-real-firming-bakuchiol-serum">
+                <img src="images/normal4.webp"> </a>
+              <h3>Firming Serum</h3>
+              <h4>$38.00</h4>
+              <p>This serum provides the ultimate preventative care for sensitive skin by boosting skin elasticity and
+                vitality.
 
-            if (result <= 60) {
-              result2 = "NORMAL";
+              </p>
+            </div>
+          </div>
+
+
+          <h2>Oily Skin</h2>
+          <div class="skintype-description">
+            <img src="images/oilyskin.jpeg" alt="oily skin" width="300" height="300">
+            <div class="descrip-tips">
+              <h3>Description</h3>
+              <p class="skinDescription">Oily skin is primarily a result of excessive <strong>sebum</strong> production.
+                This type of skin has excess oil
+                secretion
+                and is mostly shiny, sweaty, and more prone to suffer from acne, blackheads, etc. Sebum — the oily
+                substance
+                released by sebaceous glands under the skin, and sebaceous glands can change depending on hormones,
+                topical
+                skin care products, and underlying conditions like acne or rosacea.</p>
+              <h3>Tips for Oily Skin</h3>
+              <ul class="tipsList">
+                <li class="typeTips">Wash your face regularly with warm water and a gentle soap</li>
+                <li class="typeTips">Use face masks that contain clay, honey, or oatmeal</li>
+                <li class="typeTips">Use moisturizers daily after washing</li>
+              </ul>
+            </div>
+          </div>
+          <div class="skintype-product">
+            <h3>Product Recommendation</h3>
+            <div class="row">
+              <div class="col-3">
+                <a href="https://sokoglam.com/collections/oily/products/cosrx-low-ph-good-morning-cleanser">
+                  <img src="images/oily1.webp"></a>
+                <h3 id="link1">Low-pH Cleanser</h3>
+                <h4>$14.00</h4>
+                <p>This tea tree cleanser works to reduce the look of large
+                  pores and helps control oil production.</p>
+              </div>
+              <div class="col-3">
+                <a href="https://sokoglam.com/products/beauty-of-joseon-glow-serum?variant=31559230816325">
+                  <img src="images/oily2.webp"> </a>
+                <h3>Glow Serum</h3>
+                <h4>$17.00</h4>
+                <p>This serum has antiseptic and anti-inflammatory ingredients, helping not only to calm and
+                  soothe, but to improve cell turnover.</p>
+              </div>
+              <div class="col-3">
+                <a href="https://sokoglam.com/products/neogen-real-ferment-micro-essence?variant=41009913673">
+                  <img src="images/oily3.webp"> </a>
+                <h3>Micro Essence</h3>
+                <h4>$28.00</h4>
+                <p>A deeply hydrating and brightening essence that contains more than 93% naturally fermented
+                  ingredients</p>
+              </div>
+            </div>
+          </div>
+
+
+
+          <h2>Dry Skin</h2>
+          <div class="skintype-description">
+            <img src="images/dryy.jpeg" alt="dry skin" width="300" height="300">
+            <div class="descrip-tips">
+              <h3>Description</h3>
+              <p class="skinDescription">‘Dry’ is used to describe a skin type that produces less sebum than normal
+                skin. As a result, dry skin is weak in retaining moisture and building a protective moisture
+                shield
+                against external influences. This leads to an impaired moisture barrier function. Dry skin
+                exists
+                in varying degrees of severity, and in different forms that are not always clearly distinguishable.</p>
+              <h3>Tips for Dry Skin</h3>
+              <ul class="tipsList">
+                <li class="typeTips">Gently wash your face at least twice a day</li>
+                <li class="typeTips">Use allergen-free moisturizing soap</li>
+                <li class="typeTips">Choose fabrics that are kind to your skin</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="skintype-product">
+            <h3>Product Recommendation</h3>
+            <div class="row">
+              <div class="col-3">
+                <a href="https://sokoglam.com/collections/dry/products/acwell-licorice-ph-balancing-essential-cream">
+                  <img src="images/dry1.webp"></a>
+                <h3 id="link1">Licorice Cream</h3>
+                <h4>$28.00</h4>
+                <p>This mildly acidic and hypoallergenic cream contains centella and mugwort extract for soothing,
+                  moisturizing, and balancing of skin.</p>
+              </div>
+              <div class="col-3">
+                <a href="https://sokoglam.com/collections/dry/products/the-klog-snail-mucin-energy-essence">
+                  <img src="images/dry2.webp"> </a>
+                <h3>Snail Essence</h3>
+                <h4>$17.00</h4>
+                <p>The Essence is a fast-absorbing gel-to-liquid essence that tackles dryness and
+                  dehydration with trusted ingredients and an innovative formula.</p>
+              </div>
+              <div class="col-3">
+                <a href="https://sokoglam.com/collections/dry/products/tony-moly-watermelon-dew-all-over-serum">
+                  <img src="images/dry3.jpeg"> </a>
+                <h3>Watermelon Serum</h3>
+                <h4>$15.00</h4>
+                <p> This serum has a lightweight cooling matte finish and instantly absorbs into the skin without
+                  leaving a sticky or tacky residue</p>
+              </div>
+            </div>
+          </div>
+
+          
+          <h2>Combination Skin</h2>
+          <div class="skintype-description">
+            <img src="images/combination.jpeg" alt="combination skin" width="300" height="300">
+            <div class="descrip-tips">
+              <h3>Description</h3>
+              <p class="skinDescription">Combination skin refers to people with both dry and oily areas on the face. It is characterized by non-uniform oil production: more
+             active oil glands in the T-zone (across the forehead and down the bridge of the nose to the tip of the chin) and less active oil glands elsewhere.
+              </p>
+              <h3>Tips for Combination Skin</h3>
+              <ul class="tipsList">
+                <li class="typeTips">Use a gentle facial cleanser</li>
+                <li class="typeTips">Avoid products with harsh ingredients, such as fragrance or alcohol</li>
+                <li class="typeTips">Use a gentle, non-abrasive, leave-on BHA exfoliant</li>
+              </ul>
+              
+            </div>
+          </div>
+            <div class="skintype-product">
+              <h3>Product Recommendation</h3>
+              <div class="row">
+                <div class="col-3">
+                  <a href="https://sokoglam.com/collections/combination/products/naturium-retinol-complex-cream">
+                    <img src="images/combination1.webp"></a>
+                  <h3 id="link1">Retinol Cream</h3>
+                  <h4>$20.00</h4>
+                  <p>This formulated to provide the potent benefits of retinol without the irritation.</p>
+                </div>
+                <div class="col-3">
+                  <a
+                    href="https://sokoglam.com/collections/combination/products/missha-time-revolution-artemisia-pack-foam-cleanser">
+                    <img src="images/combination2.webp"> </a>
+                  <h3>Artemisia Cleanser
+                  </h3>
+                  <h4>$23.00</h4>
+                  <p>This cleanser contains Artemisia extract to soothe irritations and calm redness.</p>
+                </div>
+                <div class="col-3">
+                  <a
+                    href="https://sokoglam.com/collections/combination/products/manyo-factory-bifida-biome-complex-ampoule">
+                    <img src="images/combination3.webp"> </a>
+                  <h3>Complex Ampoule</h3>
+                  <h4>$35.00</h4>
+                  <p>This ampoule from Manyo Factory replenishes and balances skin for a more youthful looking
+                    complexion. </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <footer>
+            <div>
+              <h4>This site belongs to Aitirja, Kathy, Kerina, Riddhi, Rasheedah, and Riza</h4>
+              <p>© 8002 Group Project 2022 </p>
+            </div>
+          </footer>
+
+          <script>
+            document.getElementById("form1").onsubmit = function () {
+              one = parseInt(document.querySelector('input[name = "one"]:checked').value);
+              two = parseInt(document.querySelector('input[name = "two"]:checked').value);
+              three = parseInt(document.querySelector('input[name = "three"]:checked').value);
+              four = parseInt(document.querySelector('input[name = "four"]:checked').value);
+              result = one + two + three + four;
+
+              if (result <= 60) {
+                result2 = "NORMAL";
+              }
+              else if (result <= 120) {
+                result2 = "DRY";
+              }
+              else if (result <= 180) {
+                result2 = "OILY";
+              }
+              else {
+                result2 = "COMBINATION";
+              }
+              document.getElementById("grade").innerHTML = result2;
+              document.getElementById("grade2").innerHTML = "Scroll down to read more about your skin type!";
+              return false;
             }
-            else if (result <= 120) {
-              result2 = "DRY";
-            }
-            else if (result <= 180) {
-              result2 = "OILY";
-            }
-            else {
-              result2 = "COMBINATION";
-            }
-            document.getElementById("grade").innerHTML = result2;
-            document.getElementById("grade2").innerHTML = "Scroll down to read more about your skin type!";
-            return false;
-          }
-        </script>
+          </script>
 </body>
+
+</html>
+
+</html>
+
+</html>
 
 </html>

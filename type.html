@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Everglow • Skin Type</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- Navigation menu -->
+  <div class="top_nav">
+    <div id="box">
+      <h3>Everglow</h3>
+    </div>
+    <ul>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="concerns.html">Skin Concerns</a></li>
+      <li class="active"><a href="type.html">Skin Type</a></li>
+      <li><a href="index.html">Home</a></li>
+    </ul>
+  </div>
+
+  <div class="post">
+  </div>
+  <div class="skinTypes">
+    <div>
+      <p class="skinIntro"> Skin care is not one-size-fits-all, and it shouldn’t be. Everyone’s skin is different, and
+        to own the skin you’re in, you have to know how to care for your skin. Caring for your skin starts with knowing
+        your skin type. <strong>Complete the short quiz </strong> below to find out the skin stype you are! Once you are
+        done, take a look at the 4 most common skin types we've presented so you can get started in learning about how
+        to treat your skin.</p>
+    </div>
+    <hr>
+    <div id="skinQuiz">
+      <!--       https://codeactually.com/interactivequiz.html -->
+      <h2>Skin Type Quiz</h2>
+      <form id="form1">
+        <h3>1. How does your skin look and feel when you wake up?</h3>
+        <label for="one_normal"><input type="radio" name="one" value="0" id="one_normal" />My skin is calm with a
+          light layer of oil all over</label>
+        <label for="one_dry"><input type="radio" name="one" value="20" id="one_dry" />My skin is screaming for
+          moisture</label>
+        <label for="one_oily"><input type="radio" name="one" value="40" id="one_oily" />My skin is oily and shiny
+          all over</label>
+        <label for="one_combo"><input type="radio" name="one" value="60" id="one_combo" />My forehead is oily but my
+          cheeks feel dry</label>
+
+        <h3>2. What is generally your top skin concern?</h3>
+        <label for="two_normal"><input type="radio" name="two" value="10" id="two_normal" />Fine lines and
+          wrinkles</label>
+        <label for="two_dry"><input type="radio" name="two" value="20" id="two_dry" />Dryness or irritation
+          moisture</label>
+        <label for="two_oily"><input type="radio" name="two" value="40" id="two_oily" />Blackheads or acne</label>
+        <label for="two_combo"><input type="radio" name="two" value="60" id="two_combo" />T-zone shine or
+          unevenness</label>
+
+        <h3>3. What do your current favourite skin products do?</h3>
+        <label for="three_normal"><input type="radio" name="three" value="0" id="three_normal" />Provide the right
+          amount
+          of glow and plump</label>
+        <label for="three_dry"><input type="radio" name="three" value="20" id="three_dry" />Relieve tightness or
+          irritation</label>
+        <label for="three_oily"><input type="radio" name="three" value="40" id="three_oily" />Clear and prevent
+          breakouts</label>
+        <label for="three_combo"><input type="radio" name="three" value="60" id="three_combo" />Balance my
+          complexion</label>
+
+        <h3>4. Describe your pores</h3>
+        <label for="four_normal"><input type="radio" name="four" value="0" id="four_normal" />They are pretty much
+          unnoticeable</label>
+        <label for="four_dry"><input type="radio" name="four" value="20" id="four_dry" />Small to medium-sized</label>
+        <label for="four_oily"><input type="radio" name="four" value="40" id="four_oily" />Visible, large, and sometimes
+          clogged</label>
+        <label for="four_combo"><input type="radio" name="four" value="60" id="four_combo" />Depends on where they are
+          on my face.</label>
+        <button id="quizSubmit" type="submit" value="Submit">Submit</button>
+        <p>Your skin type is: <span id="grade">________</span></p>
+        <p id="grade2"></p>
+      </form>
+    </div>
+
+    <div id="types">
+      <h1>4 Common Skin Types</h1>
+      <div class="indType">
+        <div class="1">
+          <h2>Normal Skin</h2>
+          <img src="images/NormalSkin.jpeg" alt="normal skin">
+
+        </div>
+        <div class="2">
+          <h2>Oily Skin</h2>
+          <img src="images/oilyskin.jpeg" alt="oily skin">
+        </div>
+        <div class="3">
+          <h2>Dry Skin</h2>
+          <img src="images/dryskin.jpeg" alt="dry skin">
+
+        </div>
+        <div class="4">
+          <h2>Combination Skin</h2>
+          <img src="images/combinationskin.jpeg" alt="combination skin">
+        </div>
+
+
+
+
+
+
+
+
+        <footer>
+          <div>
+            <h4>This site belongs to Aitirja, Kathy, Kerina, Riddhi, Rasheedah, and Riza</h4>
+            <p>© 8002 Group Project 2022 </p>
+          </div>
+        </footer>
+
+        <!--         <script src="script.js"></script> -->
+        <script>
+          document.getElementById("form1").onsubmit = function () {
+            one = parseInt(document.querySelector('input[name = "one"]:checked').value);
+            two = parseInt(document.querySelector('input[name = "two"]:checked').value);
+            three = parseInt(document.querySelector('input[name = "three"]:checked').value);
+            four = parseInt(document.querySelector('input[name = "four"]:checked').value);
+            result = one + two + three + four;
+
+            if (result <= 60) {
+              result2 = "NORMAL";
+            }
+            else if (result <= 120) {
+              result2 = "DRY";
+            }
+            else if (result <= 180) {
+              result2 = "OILY";
+            }
+            else {
+              result2 = "COMBINATION";
+            }
+            document.getElementById("grade").innerHTML = result2;
+            document.getElementById("grade2").innerHTML = "Scroll down to read more about your skin type!";
+            return false;
+          }
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,574 @@
+body{
+  font-family: Montserrat;
+  color: #394735ff;
+}
+h1{
+  font-size: 45px;
+  background-color: rgb(100, 126, 93, 0.2);
+  text-align: center;
+}
+h2{
+  font-size: 30px;
+}
+p{
+  font-size: 20px;
+}
+button{
+  font-size: 24px;
+  width: 500px;
+  min-width: 200px;
+  padding: 15px 30px;;
+  background: #92AD40;
+  color:white;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  margin: 20px 2px;
+  cursor: pointer;
+}
+
+
+/* Navigation Panel */
+.top_nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  padding: 2rem 9%;
+  z-index: 1000;
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+}
+ul {
+  list-style-type: none;
+  margin-top: 0;
+  overflow: hidden;
+}
+li {
+  float: right;
+  list-style: none;
+  transition: all ease-in-out 300ms;
+  margin: 10px;
+}
+li a {
+  font-size: 20px;
+  display: block;
+  color: #394735ff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: rgb(100, 126, 93, 0.2);
+  transition: all ease-in-out 300ms;
+}
+.active{
+  border-bottom: 2px solid #394735ff;
+}
+#box {
+  font-size: 40px;
+  float: right;
+  position: absolute;
+  margin-top: 0;
+  top: 0px;
+  color: #394735ff;
+  font-weight: bold;
+}
+
+
+/* Slideshow */
+* {
+  box-sizing: border-box;
+}
+/* Position the slideshow (needed to position the left and right arrows) */
+.slideshow {
+  margin-top: 100px;
+  position: relative;
+  color: white;
+}
+/* Hide the images by default */
+.slides img{
+  object-fit: cover;
+  width: 100%;
+  height: 700px;
+}
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.caption-slideshow {
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+  background-color: #222;
+  padding: 10px 16px;
+  color: white;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* About */
+.about{
+  margin: 100px;
+}
+.about p{
+  margin-top: 20px;
+  font-size: 20px;
+}
+.post{
+  margin: 100px;
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content: space-around;
+  align-items:flex-start;
+}
+.post img{
+  object-fit: cover;
+  width: 450px;
+  max-width: 100%;
+  height: 500px;
+}
+/* Consultation Banner */
+.counsel{
+  padding: 50px;
+  background: url("images/counselBG3.jpg");
+  background-size: 100%;
+  width: 100%;
+  height: 500px;
+}
+.counsel .counsel_content{
+  padding-left: 65%;
+  display:flex;
+  flex-flow:column nowrap;
+  text-align: left;
+  color: white;
+}
+.counsel-content p{
+  border: 1px solid white;
+  
+}
+/* Founder */
+.founder{
+  color: #394735ff;
+  margin: 100px;
+  display:flex;
+  flex-flow:column nowrap;
+  justify-content: space-around;
+  align-items:stretch;
+}
+.founder p{
+  font-size: 20px;
+  margin-right: 50px;
+  text-align: justify;
+}
+.founder img{
+  max-height: 1000px;
+  max-width: 1000px;
+}
+.founder .follow{
+  display:flex;
+  flex-flow:column nowrap;
+  align-items:center;
+}
+.members{
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content: space-around;
+  align-items:flex-start;
+}
+.members img{
+  object-fit: cover;
+  max-width: 100%;
+  width: 250px;
+  height: 400px;
+}
+
+
+
+
+
+/* Product Page */
+.product{
+  margin: 100px;
+  margin-top: 200px;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+  color: #394735ff;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.col-3{
+  background-color: white;
+  flex-basis: 30%;
+  min-width: 200px;
+  margin: 30px 0;
+  text-align: center;
+  padding: 30px 10px;
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.col-3 img{
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 50px;
+}
+.col-3:hover{
+    transform: translateY(-10px);
+}
+.col-3 p{
+    font-size: 16px;
+    color: #777;
+}
+.col-3 h3{
+    font-weight: 600;
+    font-size: 25px;
+    padding: 0;
+    width: 100%;
+}
+
+
+#myUL {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd; /* Add a border to all links */
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6; /* Grey background color */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  font-size: 18px; /* Increase the font-size */
+  color: black; /* Add a black text color */
+  display: block; /* Make it into a block element to fill the whole list */
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+
+/* skin types page */
+.skinTypes{
+  text-align: left;
+  margin-left: 14%;
+  margin-right:14%;
+  margin-top: 200px;
+}
+
+.skinIntro{
+  font-size:18px
+}
+
+#skinQuiz{
+  margin-top:3%;
+}
+
+label {
+display: block;
+}
+
+input {
+width: 30px;
+margin-left: 20px;
+}
+
+
+#form1{
+  margin-left:5%;
+  margin-right:5%;
+  margin-bottom:8%;
+}
+ #grade2{
+   font-size:16px;
+ }
+
+#quizSubmit{
+  font-size: 14px;
+  width: 100px;
+  min-width: 100px;
+  padding: 10px;
+  background: #92AD40;
+  color:white;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  margin-left: 5%;
+  cursor: pointer;
+}
+
+hr{
+  background-color:#92AD40;
+  height:2px;
+  border:none;
+}
+
+/* Skin Concerns Page */
+
+.concerns{
+  margin: 100px;
+  margin-top: 200px;
+}
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.objecttitle{
+  color: #394735ff;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.col-vid{
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+  flex-basis: 700px;
+  min-width: 200px;
+  margin: 30px 0;
+  text-align: center;
+  padding: 30px 10px;
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.consult{
+  padding: 50px;
+  background: url("images/counselBG3.jpg");
+  background-size: 100%;
+  width: 100%;
+  height: 500px;;
+}
+.consult .consult_content{
+  padding-left: 65%;
+  display:flex;
+  flex-flow:column nowrap;
+  text-align: left;
+  color: white;
+}
+.consult-content p{
+  border: 1px solid white;
+  
+}
+
+
+
+/* faq Page */
+section{
+  min-height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title{
+  font-size: 3rem;
+  margin: 2rem 0rem;
+}
+.qNa{
+  margin: 100px;
+  margin-top: 200px;
+}
+.faq{
+  max-width: 700px;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #92AD40;
+  cursor: pointer;
+}
+.question{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question h3{
+  font-size: 1.8rem;
+}
+.answer p{
+  padding-top: 1rem;
+  line-height: 1.6;
+  font-size: 1.4rem;
+}
+
+.container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+}
+
+.container:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url("contact.jpeg") no-repeat center;
+	background-size: cover;
+	filter: blur(5px);
+	z-index: -1;
+}
+.contact-box{
+	max-width: 850px;
+	grid-template-columns: repeat(2, 1fr);
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.right{
+	padding: 50px;
+}
+
+.right h2{
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.right h2:after{
+	content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 50px;
+  border-radius: 2px;
+  background-color: #92AD40;
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.getInfo{
+  border: 1px solid black;
+  padding:20px;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #92AD40;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover{
+    background-color: #92AD40;
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+}
+/*
+
+
+.faq.active svg {
+  transform: rotate(180deg);
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer{
+  position: absolute;
+  left: 0;
+  top: 80;
+  width: 100%;
+  height: 15%;
+  background-color: #394735ff;
+  color: white;
+  text-align: center;
+}
+
+

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Everglow • Products</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- Navigation menu -->
+  <div class="top_nav">
+    <div id="box">
+      <h3>Everglow</h3>
+    </div>
+    <ul>
+      <li><a href="faq.html">FAQ</a></li>
+      <li class="active"><a href="products.html">Products</a></li>
+      <li><a href="concerns.html">Skin Concerns</a></li>
+      <li><a href="type.html">Skin Type</a></li>
+      <li><a href="index.html">Home</a></li>
+    </ul>
+  </div>
+
+  <div class="product">
+    <h1>Best Sellers</h1>
+    <div class="small-container">
+      <h2>The INKEY List</h2>
+      <div class="row">
+        <div class="col-3">
+          <a
+            href="https://www.sephora.com/product/the-inkey-list-hyaluronic-acid-hydrating-serum-P464807?skuId=2404390&icid2=products%20grid:p464807:product">
+            <img src="images/hyaluronic.webp"> </a>
+          <h3 id="link1">Hyaluronic Acid Serum</h3>
+          <h4>$11.49</h4>
+          <p> An ultimate hydrating must-have with two percent hyaluornic acid to hydrate the skin, leaving it smoother
+            and plumper.</p>
+        </div>
+        <div class="col-3">
+          <a
+            href="https://www.sephora.com/product/the-inkey-list-caffeine-eye-cream-P464811?skuId=2404424&icid2=products%20grid:p464811:product">
+            <img src="images/eyeCream.webp"> </a>
+          <h3>Caffeine Eye Cream</h3>
+          <h4>$12.99</h4>
+          <p> A hydrating and lightweight under-eye cream that helps to reduce the appearance of puffiness, under-eye
+            bags, and fine lines.</p>
+        </div>
+        <div class="col-3">
+          <a
+            href="https://www.sephora.com/product/the-inkey-list-polyhydroxy-acid-pha-gentle-exfoliating-toner-P464816?skuId=2406015&icid2=products%20grid:p464816:product">
+            <img src="images/toner.webp"> </a>
+          <h3>PHA Toner</h3>
+          <h4>$15.49</h4>
+          <p> A gentle exfoliant for sensitive skin that helps remove dead skin cells for a smoother, brighter
+            complexion.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <h1>Most Expensive</h1>
+    <div class="small-container">
+      <h2>LA Mer</h2>
+      <div class="row">
+        <div class="col-3">
+          <a
+            href="https://www.cremedelamer.ca/product/9090/37490/face/serums/genaissance-de-la-mer-the-serum-essence/anti-aging-skin-serum">
+            <img src="images/boujee.png"> </a>
+          <h3> Genaissance De La Mer The Serum Essence </h3>
+          <h4>$960.00</h4>
+          <p> Richly active, silken serum to accelerate renewal and target all signs of time. </p>
+        </div>
+        <div class="col-3">
+          <a
+            href="https://www.cremedelamer.ca/product/20658/78410/collections/genaissance-de-la-mer/genaissance-de-la-mer-the-concentrated-night-balm/night-cream">
+            <img src="images/Night balms.png"> </a>
+          <h3>Genaissance De La Mer The Concentrated Night Balm</h3>
+          <h4>$910.00</h4>
+          <p> Softens the look of fine lines, wrinkles, pores and age spots and helps skin feel firmer. </p>
+        </div>
+        <div class="col-3">
+          <a
+            href="https://www.cremedelamer.ca/product/20652/51458/face/eye-treatments/genaissance-de-la-mer-the-eye-expression-cream/anti-aging-eye-cream">
+            <img src="images/eye and expression.png"></a>
+          <h3>Genaissance De La Mer The Eye & Expression Cream</h3>
+          <h4>$620.00</h4>
+          <p> Helps visibly transcend virtually all signs of time. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+  <ul id="myUL">
+    <li> <a href="#link1">
+        Hyaluronic Acid Serum </a></li>
+
+    <li> <a
+        href="https://www.sephora.com/product/the-inkey-list-caffeine-eye-cream-P464811?skuId=2404424&icid2=products%20grid:p464811:product">
+        Caffeine Eye Cream</a></li>
+
+    <li> <a
+        href="https://www.sephora.com/product/the-inkey-list-polyhydroxy-acid-pha-gentle-exfoliating-toner-P464816?skuId=2406015&icid2=products%20grid:p464816:product">
+        PHA Toner</a></li>
+
+    <li><a
+        href="https://www.cremedelamer.ca/product/9090/37490/face/serums/genaissance-de-la-mer-the-serum-essence/anti-aging-skin-serum">
+        Genaissance La Mer The Serum Essence</a></li>
+
+    <li><a
+        href="https://www.cremedelamer.ca/product/20658/78410/collections/genaissance-de-la-mer/genaissance-de-la-mer-the-concentrated-night-balm/night-cream">
+        Genaissance De La Mer The Concentrated Night Balm</a></li>
+
+    <li><a
+        href="https://www.cremedelamer.ca/product/20652/51458/face/eye-treatments/genaissance-de-la-mer-the-eye-expression-cream/anti-aging-eye-cream">Genaissance
+        De La Mer The Eye & Expression Cream</a></li>
+  </ul>
+
+
+
+  <!--   <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for products...">
+
+  <table id="myTable">
+    <tr class="header">
+      <th style="width:60%;">Product Name</th>
+      <th style="width:40%;">Price</th>
+    </tr> -->
+  <!--     <tr>
+      <td>Hyaluronic Acid Serum</td>
+      <td>$11.49</td>
+    </tr>
+    <tr>
+      <td>Caffeine Eye Cream</td>
+      <td>$12.99</td>
+    </tr>
+    <tr>
+      <td>PHA Toner</td>
+      <td>$15.49</td>
+    </tr>
+    <tr>
+      <td>Genaissance La Mer The Serum Essence</td>
+      <td>$960.00</td>
+    </tr>
+    <tr>
+      <td>Genaissance De La Mer The Concentrated Night Balm</td>
+      <td>$910.00</td>
+    </tr>
+    <tr>
+      <td>Genaissance De La Mer The Eye & Expression Cream</td>
+      <td>$620.00</td>
+    </tr>
+  </table> -->
+
+  <footer>
+    <div>
+      <h4>This site belongs to Aitirja, Kathy, Kerina, Riddhi, Rasheedah, and Riza</h4>
+      <p>© 8002 Group Project 2022 </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
